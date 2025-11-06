@@ -36,7 +36,7 @@ export const Recette =
       "nutrition_par_portion": {
         "calories_kcal": 180
       },
-      "image": "https://example.com/images/veloute-butternut.jpg",
+      "image": "http://localhost:3310/assets/entrees/veloutebutternutepices.png",
       "prix": "€",
       "categorie": "Entrée",
       "origine": "France",
@@ -80,7 +80,7 @@ export const Recette =
       "nutrition_par_portion": {
         "calories_kcal": 220
       },
-      "image": "https://example.com/images/tartare-saumon-avocat.jpg",
+      "image": "http://localhost:3310/assets/entrees/tartaresaumonavocat.png",
       "prix": "€€",
       "categorie": "Entrée",
       "origine": "Fusion",
@@ -124,7 +124,7 @@ export const Recette =
       "nutrition_par_portion": {
         "calories_kcal": 320
       },
-      "image": "https://example.com/images/salade-chevre-chaud.jpg",
+      "image": "http://localhost:3310/assets/entrees/saladechevrechaudnoix.png",
       "prix": "€€",
       "categorie": "Entrée",
       "origine": "France",
@@ -169,7 +169,7 @@ export const Recette =
       "nutrition_par_portion": {
         "calories_kcal": 150
       },
-      "image": "https://example.com/images/gaspacho-andalou.jpg",
+      "image": "http://localhost:3310/assets/entrees/gazpachoandaloux.png",
       "prix": "€",
       "categorie": "Entrée",
       "origine": "Espagne",
@@ -212,7 +212,7 @@ export const Recette =
       "nutrition_par_portion": {
         "calories_kcal": 240
       },
-      "image": "https://example.com/images/carpaccio-boeuf.jpg",
+      "image": "http://localhost:3310/assets/entrees/carpaccioboeuf.png",
       "prix": "€€€",
       "categorie": "Entrée",
       "origine": "Italie",
@@ -256,7 +256,7 @@ export const Recette =
       "nutrition_par_portion": {
         "calories_kcal": 280
       },
-      "image": "https://example.com/images/tarte-tomate-moutarde.jpg",
+      "image": "http://localhost:3310/assets/entrees/tartemoutardetomate.png",
       "prix": "€",
       "categorie": "Entrée",
       "origine": "France",
@@ -300,7 +300,7 @@ export const Recette =
       "nutrition_par_portion": {
         "calories_kcal": 210
       },
-      "image": "https://example.com/images/rillettes-maquereau.jpg",
+      "image": "http://localhost:3310/assets/entrees/rillettesmaquereau.png",
       "prix": "€",
       "categorie": "Entrée",
       "origine": "France",
@@ -344,7 +344,7 @@ export const Recette =
       "nutrition_par_portion": {
         "calories_kcal": 260
       },
-      "image": "https://example.com/images/oeuf-cocotte-champignons.jpg",
+      "image": "http://localhost:3310/assets/entrees/oeufcocotechampi.png",
       "prix": "€",
       "categorie": "Entrée",
       "origine": "France",
@@ -388,7 +388,7 @@ export const Recette =
       "nutrition_par_portion": {
         "calories_kcal": 190
       },
-      "image": "https://example.com/images/houmous-pois-chiches.jpg",
+      "image": "http://localhost:3310/assets/entrees/houmous.png",
       "prix": "€",
       "categorie": "Entrée",
       "origine": "Moyen-Orient",
@@ -433,7 +433,7 @@ export const Recette =
       "nutrition_par_portion": {
         "calories_kcal": 270
       },
-      "image": "https://example.com/images/panna-cotta-parmesan.jpg",
+      "image": "http://localhost:3310/assets/entrees/pannacottatomates.png",
       "prix": "€€",
       "categorie": "Entrée",
       "origine": "Italie",
