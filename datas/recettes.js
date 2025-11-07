@@ -1,4 +1,4 @@
-export const Recette = [
+export const recettes = [
   {
     nom: "Velouté de butternut aux épices",
     base_portions: 4,
@@ -53,6 +53,7 @@ export const Recette = [
     image: "https://example.com/images/veloute-butternut.jpg",
     prix: "€",
     categorie: "Entrée",
+    idcategorie: 1,
     origine: "France",
     saison: ["Automne", "Hiver"],
     description:
@@ -108,6 +109,7 @@ export const Recette = [
     image: "https://example.com/images/tartare-saumon-avocat.jpg",
     prix: "€€",
     categorie: "Entrée",
+    idcategorie: 1,
     origine: "Fusion",
     saison: ["Printemps", "Été", "Automne", "Hiver"],
     description:
@@ -169,6 +171,7 @@ export const Recette = [
     image: "https://example.com/images/salade-chevre-chaud.jpg",
     prix: "€€",
     categorie: "Entrée",
+    idcategorie: 1,
     origine: "France",
     saison: ["Automne", "Hiver"],
     description:
@@ -226,6 +229,7 @@ export const Recette = [
     image: "https://example.com/images/gaspacho-andalou.jpg",
     prix: "€",
     categorie: "Entrée",
+    idcategorie: 1,
     origine: "Espagne",
     saison: ["Été"],
     description:
@@ -296,6 +300,7 @@ export const Recette = [
     image: "https://example.com/images/carpaccio-boeuf.jpg",
     prix: "€€€",
     categorie: "Entrée",
+    idcategorie: 1,
     origine: "Italie",
     saison: ["Printemps", "Été", "Automne", "Hiver"],
     description:
@@ -367,6 +372,7 @@ export const Recette = [
     image: "https://example.com/images/tarte-tomate-moutarde.jpg",
     prix: "€",
     categorie: "Entrée",
+    idcategorie: 1,
     origine: "France",
     saison: ["Été"],
     description:
@@ -423,6 +429,7 @@ export const Recette = [
     image: "https://example.com/images/rillettes-maquereau.jpg",
     prix: "€",
     categorie: "Entrée",
+    idcategorie: 1,
     origine: "France",
     saison: ["Printemps", "Été", "Automne", "Hiver"],
     description:
@@ -490,6 +497,7 @@ export const Recette = [
     image: "https://example.com/images/oeuf-cocotte-champignons.jpg",
     prix: "€",
     categorie: "Entrée",
+    idcategorie: 1,
     origine: "France",
     saison: ["Automne", "Hiver"],
     description:
@@ -561,6 +569,7 @@ export const Recette = [
     image: "https://example.com/images/houmous-pois-chiches.jpg",
     prix: "€",
     categorie: "Entrée",
+    idcategorie: 1,
     origine: "Moyen-Orient",
     saison: ["Printemps", "Été", "Automne", "Hiver"],
     description:
@@ -622,6 +631,7 @@ export const Recette = [
     image: "https://example.com/images/panna-cotta-parmesan.jpg",
     prix: "€€",
     categorie: "Entrée",
+    idcategorie: 1,
     origine: "Italie",
     saison: ["Printemps", "Été", "Automne", "Hiver"],
     description:
@@ -689,6 +699,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/plats/curry-pois-chiche.png",
     prix: "€",
     categorie: "Plat",
+    idcategorie: 2,
     origine: "Inde",
 
     saison: ["Automne", "Hiver"],
@@ -748,6 +759,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/plats/poulet-basquaise.png",
     prix: "€€",
     categorie: "Plat",
+    idcategorie: 2,
     origine: "France",
 
     saison: ["Été", "Automne"],
@@ -814,6 +826,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/plats/lasagne-vege.png",
     prix: "€€",
     categorie: "Plat",
+    idcategorie: 2,
     origine: "Italie",
 
     saison: ["Été", "Automne"],
@@ -872,6 +885,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/plats/boeuf-bourgui.png",
     prix: "€€€",
     categorie: "Plat",
+    idcategorie: 2,
     origine: "France",
 
     saison: ["Automne", "Hiver"],
@@ -923,6 +937,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/plats/tacos-mexicain.png",
     prix: "€€",
     categorie: "Plat",
+    idcategorie: 2,
     origine: "Mexique",
 
     saison: ["Printemps", "Été"],
@@ -981,6 +996,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/plats/risotto-champi.png",
     prix: "€€",
     categorie: "Plat",
+    idcategorie: 2,
     origine: "Italie",
 
     saison: ["Automne", "Hiver"],
@@ -1037,6 +1053,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/plats/chili-sin-carne.png",
     prix: "€",
     categorie: "Plat",
+    idcategorie: 2,
     origine: "Mexique",
 
     saison: ["Hiver", "Automne"],
@@ -1092,6 +1109,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/plats/saumon-legume.png",
     prix: "€€",
     categorie: "Plat",
+    idcategorie: 2,
     origine: "Scandinavie",
 
     saison: ["Printemps", "Été"],
@@ -1153,6 +1171,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/plats/couscous-vege.png",
     prix: "€",
     categorie: "Plat",
+    idcategorie: 2,
     origine: "Maghreb",
 
     saison: ["Hiver", "Printemps"],
@@ -1209,6 +1228,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/plats/gratin-patate-jambon.png",
     prix: "€",
     categorie: "Plat",
+    idcategorie: 2,
     origine: "France",
 
     saison: ["Automne", "Hiver"],
@@ -1262,6 +1282,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/desserts/tiramisu.png",
     prix: "€€",
     categorie: "Dessert",
+    idcategorie: 3,
     origine: "Italie",
     saison: ["Printemps", "Été", "Automne", "Hiver"],
     description:
@@ -1326,6 +1347,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/desserts/panna.png",
     prix: "€",
     categorie: "Dessert",
+    idcategorie: 3,
     origine: "Italie",
     saison: ["Printemps", "Été"],
     description:
@@ -1369,6 +1391,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/desserts/crumble.png",
     prix: "€",
     categorie: "Dessert",
+    idcategorie: 3,
     origine: "Royaume-Uni",
     saison: ["Automne", "Hiver"],
     description:
@@ -1426,6 +1449,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/desserts/creme.png",
     prix: "€€",
     categorie: "Dessert",
+    idcategorie: 3,
     origine: "France",
     saison: ["Automne", "Hiver"],
     description:
@@ -1470,6 +1494,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/desserts/moelleux.png",
     prix: "€",
     categorie: "Dessert",
+    idcategorie: 3,
     origine: "France",
     saison: ["Automne", "Hiver"],
     description:
@@ -1535,6 +1560,7 @@ export const Recette = [
     image:  "http://localhost:3310/assets/desserts/citron.png",
     prix: "€€",
     categorie: "Dessert",
+    idcategorie: 3,
     origine: "États-Unis",
     saison: ["Printemps", "Été", "Automne", "Hiver"],
     description:
@@ -1593,6 +1619,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/desserts/ile.png",
     prix: "€",
     categorie: "Dessert",
+    idcategorie: 3,
     origine: "France",
     saison: ["Printemps", "Été", "Automne", "Hiver"],
     description:
@@ -1635,6 +1662,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/desserts/tartetatin.png",
     prix: "€",
     categorie: "Dessert",
+    idcategorie: 3,
     origine: "France",
     saison: ["Automne", "Hiver"],
     description:
@@ -1679,6 +1707,7 @@ export const Recette = [
     image: "http://localhost:3310/assets/desserts/sorbet.png",
     prix: "€",
     categorie: "Dessert",
+    idcategorie: 3,
     origine: "International",
     saison: ["Printemps", "Été"],
     description:
@@ -1693,6 +1722,7 @@ export const Recette = [
   {
     nom: "Profiteroles au chocolat",
     categorie: "Dessert",
+    idcategorie: 3,
     base_portions: 4,
     portions: 4,
     ingredients: [
