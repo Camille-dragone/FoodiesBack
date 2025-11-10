@@ -19,7 +19,6 @@ app.get ("/recettes",(req,res) => {
   return res.json(recettes)
 })
 
-
 app.get("/recettes/:idcategorie", (req, res) => {
   const id = parseInt(req.params.idcategorie);
   return res.json(recettes.filter(rec => rec.idcategorie === id));
@@ -53,23 +52,48 @@ function isIngredientInUniqueIngredients (uniqueIngredients, ingredient) {
   return false 
 }
 
-
-
-/*id n°1 => entrée / id n°2 =>plat / id n°3 => dessert 
-
-/* utiliser req.body */
-/* insérer avec le app.post*/
-/* demander à Abdou si cette regarde n'est pas trop galère à utiliser côté front et comment / ce que l'on doit mettre en front : 
-faut-il  mettre method : POST,  lui envoyer le lien 
-
-*/
-/*
 app.post("/recherche", (req, res) => {
-  const {ingredients} = req.body
+  const { ingredients } = req.body;
+
+  if (!ingredients || !Array.isArray(ingredients) || ingredients.length === 0) {
+    return res.status(400).json({ message: "Aucun ingrédient fourni " });
+  }
+
+  const resultats = recettes.filter((rec) => {
+    let nbCommun = 0;
+    rec.ingredients.forEach((ingRec) => {
+      const found = ingredients.some((ingParam) => {
+        if (!ingParam.nom) return false;
+        return ingParam.nom.toLowerCase() === ingRec.nom.toLowerCase();
+      });
+      if (found) nbCommun++;
+    });
+
+    const pourcentage = (nbCommun / ingredients.length) * 100;
+    return pourcentage >= 50; 
+  });
+  const nomsRecettes = resultats.map((rec) => rec.nom);
+
+  if (nomsRecettes.length === 0) {
+    return res.status(404).json({ message: "Aucune recette trouvée" });
+  }
+  return res.json(nomsRecettes);
+});
+
+/*
+
+app.post("/recherche", (req, res) => {
+  const {ingredients} = req.body ;
   console.log(ingredients)
 
   if (!ingredients || ingredients.length === 0) {
     return res.status(404).json ("Aucune recettes trouvées")
+  }
+  function isIngredientInUniqueIngredients(uniqueIngredients, ingredient) {
+    return uniqueIngredients.some(
+      (uniqueIngredient) =>
+        uniqueIngredient.nom.toLowerCase() === ingredient.nom.toLowerCase()
+    );
   }
 
   const resultats = recettes.filter((rec) => {
@@ -80,7 +104,10 @@ app.post("/recherche", (req, res) => {
         nbCommun++;
     }); return nbCommun >= 2;
   });
-  const nomsRecettes = resultats.map ((rec) => rec.nom)
+  const nomsRecettes = resultats.map ((rec) => rec.nom);
+
+  res.json(nomsRecettes) ;
+});
 
     /* 
     if (nbCommun >= 2)
