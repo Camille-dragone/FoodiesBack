@@ -4,8 +4,8 @@ export const recettes = [
     base_portions: 4,
     portions: 4,
     ingredients: [
-      { nom: "Butternut", par_portion: 200, unite: "g", scalable: true },
-      { nom: "Oignon", par_portion: 0.5, unite: "", scalable: true },
+      { nom: "Butternut", par_portion: 200, unite: "g", scalable: true, imging:"http://localhost:3310/assets/ingredients/butternut.png" },
+      { nom: "Oignon", par_portion: 0.5, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/oignon.png"},
       {
         nom: "Bouillon de légumes",
         par_portion: 150,
@@ -76,10 +76,10 @@ export const recettes = [
         unite: "g",
         scalable: true,
       },
-      { nom: "Avocat mûr", par_portion: 0.5, unite: "", scalable: true },
-      { nom: "Citron vert", par_portion: 0.5, unite: "", scalable: true },
-      { nom: "Échalote", par_portion: 0.25, unite: "", scalable: true },
-      { nom: "Coriandre fraîche", par_portion: 2, unite: "g", scalable: true },
+      { nom: "Avocat mûr", par_portion: 0.5, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/avocat.png" },
+      { nom: "Citron vert", par_portion: 0.5, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/citronvert.png" },
+      { nom: "Échalote", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/echalotes.png" },
+      { nom: "Coriandre fraîche", par_portion: 2, unite: "g", scalable: true, imging:"http://localhost:3310/assets/ingredients/coriandre.png"  },
       { nom: "Huile d'olive", par_portion: 5, unite: "ml", scalable: true },
       { nom: "Sauce soja", par_portion: 2.5, unite: "ml", scalable: true },
       { nom: "Sel", par_portion: 0.25, unite: "pincée", scalable: false },
@@ -128,13 +128,14 @@ export const recettes = [
     portions: 4,
     ingredients: [
       { nom: "Crottin de chèvre", par_portion: 60, unite: "g", scalable: true },
-      { nom: "Mesclun", par_portion: 50, unite: "g", scalable: true },
+      { nom: "Mesclun", par_portion: 50, unite: "g", scalable: true, imging:"http://localhost:3310/assets/ingredients/mesclun.png" },
       { nom: "Noix", par_portion: 15, unite: "g", scalable: true },
       {
         nom: "Pain de campagne",
         par_portion: 1,
         unite: "tranche",
         scalable: true,
+        imging:"http://localhost:3310/assets/ingredients/paincampagne.png"
       },
       { nom: "Miel", par_portion: 5, unite: "ml", scalable: true },
       {
@@ -189,12 +190,12 @@ export const recettes = [
     base_portions: 4,
     portions: 4,
     ingredients: [
-      { nom: "Tomates mûres", par_portion: 200, unite: "g", scalable: true },
-      { nom: "Concombre", par_portion: 50, unite: "g", scalable: true },
-      { nom: "Poivron rouge", par_portion: 50, unite: "g", scalable: true },
-      { nom: "Oignon rouge", par_portion: 15, unite: "g", scalable: true },
-      { nom: "Gousse d'ail", par_portion: 0.25, unite: "", scalable: true },
-      { nom: "Pain rassis", par_portion: 20, unite: "g", scalable: true },
+      { nom: "Tomates mûres", par_portion: 200, unite: "g", scalable: true, imging:"http://localhost:3310/assets/ingredients/tomates.png" },
+      { nom: "Concombre", par_portion: 50, unite: "g", scalable: true,imging: "http://localhost:3310/assets/ingredients/concombre.png"  },
+      { nom: "Poivron rouge", par_portion: 50, unite: "g", scalable: true, imging: "http://localhost:3310/assets/ingredients/poivronrouge.png"  },
+      { nom: "Oignon rouge", par_portion: 15, unite: "g", scalable: true, imging:"http://localhost:3310/assets/ingredients/oignonrouge.png" },
+      { nom: "Gousse d'ail", par_portion: 0.25, unite: "", scalable: true, imging: "http://localhost:3310/assets/ingredients/ail.png"  },
+      { nom: "Pain rassis", par_portion: 20, unite: "g", scalable: true, imging: "http://localhost:3310/assets/ingredients/painrassis.png"  },
       { nom: "Vinaigre de xérès", par_portion: 5, unite: "ml", scalable: true },
       {
         nom: "Huile d'olive extra vierge",
@@ -249,8 +250,8 @@ export const recettes = [
     ingredients: [
       { nom: "Filet de bœuf", par_portion: 80, unite: "g", scalable: true },
       { nom: "Parmesan", par_portion: 15, unite: "g", scalable: true },
-      { nom: "Roquette", par_portion: 20, unite: "g", scalable: true },
-      { nom: "Citron", par_portion: 0.25, unite: "", scalable: true },
+      { nom: "Roquette", par_portion: 20, unite: "g", scalable: true, imging:"http://localhost:3310/assets/ingredients/roquette.png" },
+      { nom: "Citron", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/citron.png"  },
       {
         nom: "Huile d'olive extra vierge",
         par_portion: 10,
@@ -319,7 +320,7 @@ export const recettes = [
     portions: 4,
     ingredients: [
       { nom: "Pâte feuilletée", par_portion: 60, unite: "g", scalable: true },
-      { nom: "Tomates", par_portion: 150, unite: "g", scalable: true },
+      { nom: "Tomates", par_portion: 150, unite: "g", scalable: true, imging: "http://localhost:3310/assets/ingredients/tomates.png" },
       {
         nom: "Moutarde à l'ancienne",
         par_portion: 10,
@@ -346,6 +347,7 @@ export const recettes = [
         par_portion: 2,
         unite: "feuilles",
         scalable: true,
+        imging:"http://localhost:3310/assets/ingredients/basilic.png"
       },
     ],
     recette: [
@@ -397,9 +399,9 @@ export const recettes = [
         scalable: true,
       },
       { nom: "Fromage blanc", par_portion: 30, unite: "g", scalable: true },
-      { nom: "Citron", par_portion: 0.25, unite: "", scalable: true },
-      { nom: "Échalote", par_portion: 0.25, unite: "", scalable: true },
-      { nom: "Aneth frais", par_portion: 2, unite: "g", scalable: true },
+      { nom: "Citron", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/citron.png" },
+      { nom: "Échalote", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/echalotes.png"  },
+      { nom: "Aneth frais", par_portion: 2, unite: "g", scalable: true, imging:"http://localhost:3310/assets/ingredients/aneth.png" },
       { nom: "Moutarde de Dijon", par_portion: 5, unite: "g", scalable: true },
       { nom: "Huile d'olive", par_portion: 5, unite: "ml", scalable: true },
       { nom: "Sel", par_portion: 0.25, unite: "pincée", scalable: false },
@@ -461,9 +463,9 @@ export const recettes = [
         unite: "ml",
         scalable: true,
       },
-      { nom: "Échalote", par_portion: 0.25, unite: "", scalable: true },
+      { nom: "Échalote", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/echalotes.png"  },
       { nom: "Beurre", par_portion: 5, unite: "g", scalable: true },
-      { nom: "Ciboulette", par_portion: 2, unite: "g", scalable: true },
+      { nom: "Ciboulette", par_portion: 2, unite: "g", scalable: true, imging:"http://localhost:3310/assets/ingredients/ciboulette.png"  },
       {
         nom: "Parmesan râpé (optionnel)",
         par_portion: 10,
@@ -520,6 +522,7 @@ export const recettes = [
         par_portion: 100,
         unite: "g",
         scalable: true,
+        imging:"http://localhost:3310/assets/ingredients/poidschiches.png" 
       },
       {
         nom: "Tahini (purée de sésame)",
@@ -527,8 +530,8 @@ export const recettes = [
         unite: "g",
         scalable: true,
       },
-      { nom: "Citron", par_portion: 0.5, unite: "", scalable: true },
-      { nom: "Gousse d'ail", par_portion: 0.5, unite: "", scalable: true },
+      { nom: "Citron", par_portion: 0.5, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/citron.png" },
+      { nom: "Gousse d'ail", par_portion: 0.5, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/ail.png"  },
       { nom: "Huile d'olive", par_portion: 15, unite: "ml", scalable: true },
       {
         nom: "Cumin en poudre",
@@ -594,9 +597,9 @@ export const recettes = [
         unite: "feuille",
         scalable: true,
       },
-      { nom: "Tomates cerises", par_portion: 50, unite: "g", scalable: true },
+      { nom: "Tomates cerises", par_portion: 50, unite: "g", scalable: true  },
       { nom: "Huile d'olive", par_portion: 10, unite: "ml", scalable: true },
-      { nom: "Thym frais", par_portion: 0.5, unite: "branche", scalable: true },
+      { nom: "Thym frais", par_portion: 0.5, unite: "branche", scalable: true, imging:"http://localhost:3310/assets/ingredients/thym.png"  },
       { nom: "Sucre", par_portion: 2.5, unite: "g", scalable: true },
       { nom: "Sel", par_portion: 0.25, unite: "pincée", scalable: false },
       { nom: "Poivre", par_portion: 0.25, unite: "pincée", scalable: false },
@@ -605,6 +608,7 @@ export const recettes = [
         par_portion: 2,
         unite: "feuilles",
         scalable: true,
+        imging:"http://localhost:3310/assets/ingredients/basilic.png"
       },
     ],
     recette: [
@@ -656,6 +660,7 @@ export const recettes = [
         par_portion: 100,
         unite: "g",
         scalable: true,
+        imging:"http://localhost:3310/assets/ingredients/poidschiches.png"
       },
       { nom: "Lait de coco", par_portion: 75, unite: "ml", scalable: true },
       {
@@ -663,9 +668,10 @@ export const recettes = [
         par_portion: 50,
         unite: "g",
         scalable: true,
+        imging:"http://localhost:3310/assets/ingredients/tomatesconcassees.png"
       },
-      { nom: "Oignon", par_portion: 0.25, unite: "", scalable: true },
-      { nom: "Ail", par_portion: 0.5, unite: "gousse", scalable: true },
+      { nom: "Oignon", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/oignon.png" },
+      { nom: "Ail", par_portion: 0.5, unite: "gousse", scalable: true, imging: "http://localhost:3310/assets/ingredients/ail.png"  },
       { nom: "Pâte de curry", par_portion: 0.5, unite: "càc", scalable: true },
       { nom: "Huile", par_portion: 0.5, unite: "càs", scalable: true },
       { nom: "Sel", par_portion: 0.25, unite: "pincée", scalable: false },
@@ -722,10 +728,10 @@ export const recettes = [
         unite: "g",
         scalable: true,
       },
-      { nom: "Poivron rouge", par_portion: 0.25, unite: "", scalable: true },
-      { nom: "Poivron vert", par_portion: 0.25, unite: "", scalable: true },
-      { nom: "Tomates pelées", par_portion: 75, unite: "g", scalable: true },
-      { nom: "Oignon", par_portion: 0.25, unite: "", scalable: true },
+      { nom: "Poivron rouge", par_portion: 0.25, unite: "", scalable: true, imging: "http://localhost:3310/assets/ingredients/poivronrouge.png"  },
+      { nom: "Poivron vert", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/poivronvert.png" },
+      { nom: "Tomates pelées", par_portion: 75, unite: "g", scalable: true, imging:"http://localhost:3310/assets/ingredients/tomatespelees.png" },
+      { nom: "Oignon", par_portion: 0.25, unite: "", scalable: true,imging:"http://localhost:3310/assets/ingredients/oignon.png" },
       { nom: "Vin blanc", par_portion: 25, unite: "ml", scalable: true },
       { nom: "Huile d’olive", par_portion: 0.5, unite: "càs", scalable: true },
       { nom: "Sel", par_portion: 0.25, unite: "pincée", scalable: false },
@@ -785,17 +791,19 @@ export const recettes = [
         par_portion: 50,
         unite: "g",
         scalable: true,
+        imging:"http://localhost:3310/assets/ingredients/lasagnes.png"
       },
-      { nom: "Courgette", par_portion: 0.25, unite: "", scalable: true },
-      { nom: "Aubergine", par_portion: 0.25, unite: "", scalable: true },
+      { nom: "Courgette", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/courgette.png" },
+      { nom: "Aubergine", par_portion: 0.25, unite: "", scalable: true , imging:"http://localhost:3310/assets/ingredients/aubergine.png"},
       {
         nom: "Tomates concassées",
         par_portion: 100,
         unite: "g",
         scalable: true,
+        imging:"http://localhost:3310/assets/ingredients/tomatesconcassees.png"
       },
       { nom: "Mozzarella", par_portion: 25, unite: "g", scalable: true },
-      { nom: "Basilic", par_portion: 1, unite: "feuille", scalable: false },
+      { nom: "Basilic", par_portion: 1, unite: "feuille", scalable: false, imging:"http://localhost:3310/assets/ingredients/basilic.png" },
     ],
 
     recette: [
@@ -844,8 +852,8 @@ export const recettes = [
 
     ingredients: [
       { nom: "Boeuf à braiser", par_portion: 150, unite: "g", scalable: true },
-      { nom: "Carotte", par_portion: 0.5, unite: "", scalable: true },
-      { nom: "Oignon", par_portion: 0.25, unite: "", scalable: true },
+      { nom: "Carotte", par_portion: 0.5, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/carotte.png" },
+      { nom: "Oignon", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/oignon.png" },
       { nom: "Vin rouge", par_portion: 100, unite: "ml", scalable: true },
       {
         nom: "Bouillon de boeuf",
@@ -854,7 +862,7 @@ export const recettes = [
         scalable: true,
       },
       { nom: "Lardons", par_portion: 25, unite: "g", scalable: true },
-      { nom: "Farine", par_portion: 5, unite: "g", scalable: true },
+      { nom: "Farine", par_portion: 5, unite: "g", scalable: true,  imging:"http://localhost:3310/assets/ingredients/farine.png" },
     ],
 
     recette: [
@@ -902,10 +910,10 @@ export const recettes = [
     portions: 4,
 
     ingredients: [
-      { nom: "Tortillas de maïs", par_portion: 2, unite: "", scalable: true },
+      { nom: "Tortillas de maïs", par_portion: 2, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/tortillas.png" },
       { nom: "Bœuf haché", par_portion: 100, unite: "g", scalable: true },
-      { nom: "Tomate", par_portion: 0.5, unite: "", scalable: true },
-      { nom: "Salade", par_portion: 0.25, unite: "", scalable: true },
+      { nom: "Tomate", par_portion: 0.5, unite: "", scalable: true, imging: "http://localhost:3310/assets/ingredients/tomates.png"  },
+      { nom: "Salade", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/salade.png" },
       { nom: "Fromage râpé", par_portion: 15, unite: "g", scalable: true },
       { nom: "Épices à tacos", par_portion: 0.5, unite: "càc", scalable: true },
     ],
@@ -954,7 +962,7 @@ export const recettes = [
     portions: 4,
 
     ingredients: [
-      { nom: "Riz arborio", par_portion: 80, unite: "g", scalable: true },
+      { nom: "Riz arborio", par_portion: 80, unite: "g", scalable: true, imging:"http://localhost:3310/assets/ingredients/rizarborio.png" },
       { nom: "Champignons", par_portion: 75, unite: "g", scalable: true },
       {
         nom: "Bouillon de légumes",
@@ -962,7 +970,7 @@ export const recettes = [
         unite: "ml",
         scalable: true,
       },
-      { nom: "Oignon", par_portion: 0.25, unite: "", scalable: true },
+      { nom: "Oignon", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/oignon.png" },
       { nom: "Parmesan râpé", par_portion: 10, unite: "g", scalable: true },
       { nom: "Beurre", par_portion: 5, unite: "g", scalable: true },
       { nom: "Huile d’olive", par_portion: 0.5, unite: "càs", scalable: true },
@@ -1014,15 +1022,16 @@ export const recettes = [
 
     ingredients: [
       { nom: "Haricots rouges", par_portion: 80, unite: "g", scalable: true },
-      { nom: "Maïs", par_portion: 40, unite: "g", scalable: true },
+      { nom: "Maïs", par_portion: 40, unite: "g", scalable: true, imging:"http://localhost:3310/assets/ingredients/mais.png" },
       {
         nom: "Tomates concassées",
         par_portion: 100,
         unite: "g",
         scalable: true,
+        imging:"http://localhost:3310/assets/ingredients/tomatesconcassees.png"
       },
-      { nom: "Poivron", par_portion: 0.25, unite: "", scalable: true },
-      { nom: "Oignon", par_portion: 0.25, unite: "", scalable: true },
+      { nom: "Poivron", par_portion: 0.25, unite: "", scalable: true, imging: "http://localhost:3310/assets/ingredients/poivronrouge.png"  },
+      { nom: "Oignon", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/oignon.png" },
       { nom: "Épices chili", par_portion: 0.5, unite: "càc", scalable: true },
     ],
 
@@ -1075,11 +1084,11 @@ export const recettes = [
 
     ingredients: [
       { nom: "Pavé de saumon", par_portion: 120, unite: "g", scalable: true },
-      { nom: "Courgette", par_portion: 0.25, unite: "", scalable: true },
-      { nom: "Carotte", par_portion: 0.25, unite: "", scalable: true },
-      { nom: "Poivron", par_portion: 0.25, unite: "", scalable: true },
+      { nom: "Courgette", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/courgette.png" },
+      { nom: "Carotte", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/carotte.png" },
+      { nom: "Poivron", par_portion: 0.25, unite: "", scalable: true, imging: "http://localhost:3310/assets/ingredients/poivronrouge.png"  },
       { nom: "Huile d’olive", par_portion: 0.5, unite: "càs", scalable: true },
-      { nom: "Citron", par_portion: 0.125, unite: "", scalable: false },
+      { nom: "Citron", par_portion: 0.125, unite: "", scalable: false, imging:"http://localhost:3310/assets/ingredients/citron.png" },
     ],
 
     recette: [
@@ -1126,16 +1135,17 @@ export const recettes = [
     portions: 4,
 
     ingredients: [
-      { nom: "Semoule de blé", par_portion: 80, unite: "g", scalable: true },
+      { nom: "Semoule de blé", par_portion: 80, unite: "g", scalable: true,  imging:"http://localhost:3310/assets/ingredients/semouledeble.png"},
       {
         nom: "Pois chiches cuits",
         par_portion: 60,
         unite: "g",
         scalable: true,
+        imging:"http://localhost:3310/assets/ingredients/poidschiches.png"
       },
-      { nom: "Carotte", par_portion: 0.5, unite: "", scalable: true },
-      { nom: "Courgette", par_portion: 0.25, unite: "", scalable: true },
-      { nom: "Navet", par_portion: 0.25, unite: "", scalable: true },
+      { nom: "Carotte", par_portion: 0.5, unite: "", scalable: true,  imging:"http://localhost:3310/assets/ingredients/carotte.png" },
+      { nom: "Courgette", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/courgette.png" },
+      { nom: "Navet", par_portion: 0.25, unite: "", scalable: true, imging:"http://localhost:3310/assets/ingredients/navet.png" },
       {
         nom: "Épices à couscous",
         par_portion: 0.5,
@@ -1192,11 +1202,11 @@ export const recettes = [
     portions: 4,
 
     ingredients: [
-      { nom: "Pommes de terre", par_portion: 150, unite: "g", scalable: true },
+      { nom: "Pommes de terre", par_portion: 150, unite: "g", scalable: true, imging:"http://localhost:3310/assets/ingredients/patates.png" },
       { nom: "Jambon blanc", par_portion: 40, unite: "g", scalable: true },
       { nom: "Crème fraîche", par_portion: 30, unite: "ml", scalable: true },
       { nom: "Fromage râpé", par_portion: 20, unite: "g", scalable: true },
-      { nom: "Ail", par_portion: 0.25, unite: "gousse", scalable: false },
+      { nom: "Ail", par_portion: 0.25, unite: "gousse", scalable: false, imging: "http://localhost:3310/assets/ingredients/ail.png"  },
       { nom: "Sel", par_portion: 0.25, unite: "pincée", scalable: false },
     ],
 
@@ -1364,12 +1374,12 @@ export const recettes = [
     base_portions: 4,
     portions: 4,
     ingredients: [
-      { nom: "Pommes", par_portion: 1, unite: "pièce", scalable: true },
-      { nom: "Farine", par_portion: 25, unite: "g", scalable: true },
+      { nom: "Pommes", par_portion: 1, unite: "pièce", scalable: true,  imging:"http://localhost:3310/assets/ingredients/pommes.png" },
+      { nom: "Farine", par_portion: 25, unite: "g", scalable: true,  imging:"http://localhost:3310/assets/ingredients/farine.png" },
       { nom: "Beurre froid", par_portion: 20, unite: "g", scalable: true },
       { nom: "Sucre", par_portion: 15, unite: "g", scalable: true },
       { nom: "Cannelle", par_portion: 0.25, unite: "càc", scalable: false },
-      { nom: "Jus de citron", par_portion: 5, unite: "ml", scalable: true },
+      { nom: "Jus de citron", par_portion: 5, unite: "ml", scalable: true, imging:"http://localhost:3310/assets/ingredients/citron.png" },
     ],
     recette: [
       "Étape 1 : Peler et couper les pommes en dés, arroser de jus de citron.",
@@ -1471,7 +1481,7 @@ export const recettes = [
       { nom: "Beurre", par_portion: 25, unite: "g", scalable: true },
       { nom: "Œufs", par_portion: 0.75, unite: "", scalable: true },
       { nom: "Sucre", par_portion: 15, unite: "g", scalable: true },
-      { nom: "Farine", par_portion: 10, unite: "g", scalable: true },
+      { nom: "Farine", par_portion: 10, unite: "g", scalable: true, imging:"http://localhost:3310/assets/ingredients/farine.png" },
       { nom: "Sel", par_portion: 0.25, unite: "pincée", scalable: false },
     ],
     recette: [
@@ -1528,10 +1538,11 @@ export const recettes = [
       },
       { nom: "Sucre", par_portion: 15, unite: "g", scalable: true },
       {
-        nom: "Citron (zeste + jus)",
+        nom: "Citron",
         par_portion: 0.25,
         unite: "pièce",
         scalable: true,
+        imging:"http://localhost:3310/assets/ingredients/citron.png"
       },
       {
         nom: "Gélatine en feuilles",
@@ -1637,11 +1648,11 @@ export const recettes = [
     base_portions: 4,
     portions: 4,
     ingredients: [
-      { nom: "Pommes", par_portion: 1, unite: "pièce", scalable: true },
+      { nom: "Pommes", par_portion: 1, unite: "pièce", scalable: true, imging:"http://localhost:3310/assets/ingredients/pommes.png" },
       { nom: "Sucre", par_portion: 25, unite: "g", scalable: true },
       { nom: "Beurre", par_portion: 15, unite: "g", scalable: true },
       { nom: "Pâte feuilletée", par_portion: 40, unite: "g", scalable: true },
-      { nom: "Jus de citron", par_portion: 5, unite: "ml", scalable: true },
+      { nom: "Jus de citron", par_portion: 5, unite: "ml", scalable: true,  imging:"http://localhost:3310/assets/ingredients/citron.png" },
     ],
     recette: [
       "Étape 1 : Caraméliser sucre et beurre dans un moule allant au four.",
@@ -1684,10 +1695,11 @@ export const recettes = [
         par_portion: 100,
         unite: "g",
         scalable: true,
+        imging:"http://localhost:3310/assets/ingredients/mangue.png"
       },
       { nom: "Sucre", par_portion: 15, unite: "g", scalable: true },
       { nom: "Eau", par_portion: 20, unite: "ml", scalable: true },
-      { nom: "Jus de citron", par_portion: 5, unite: "ml", scalable: true },
+      { nom: "Jus de citron", par_portion: 5, unite: "ml", scalable: true,  imging:"http://localhost:3310/assets/ingredients/citron.png" },
     ],
     recette: [
       "Étape 1 : Mixer la chair de mangue avec le sucre, l’eau et le jus de citron jusqu’à lisse.",
@@ -1727,7 +1739,7 @@ export const recettes = [
     portions: 4,
     ingredients: [
       {
-        nom: "Pâte à choux (farine+eau+beurre+œufs)",
+        nom: "Pâte à choux",
         par_portion: 35,
         unite: "g",
         scalable: true,
