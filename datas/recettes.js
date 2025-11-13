@@ -1202,7 +1202,7 @@ export const recettes = [
       calories_kcal: 480,
     },
 
-    image: "http://localhost:3310/assets/plats/couscous-vege.png",
+    image: "http://localhost:3310/assets/plats/coucous-vege.png",
     prix: "€",
     categorie: "Plat",
     idcategorie: 2,
