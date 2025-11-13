@@ -565,6 +565,7 @@ export const recettes = [
         par_portion: 30,
         unite: "ml",
         scalable: true,
+        imging:"http://localhost:3310/assets/ingredients/eaudecuisson.png"
       },
     ],
     recette: [
