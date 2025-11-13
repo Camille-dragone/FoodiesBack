@@ -653,7 +653,7 @@ export const recettes = [
     nutrition_par_portion: {
       calories_kcal: 270,
     },
-    image: "http://localhost:3310/assets/entrees/pannacottatomate.png",
+    image: "http://localhost:3310/assets/entrees/pannacottatomates.png",
     prix: "€€",
     categorie: "Entrée",
     idcategorie: 1,
