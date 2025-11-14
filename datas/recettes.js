@@ -565,6 +565,7 @@ export const recettes = [
         par_portion: 30,
         unite: "ml",
         scalable: true,
+        imging:"http://localhost:3310/assets/ingredients/eaudecuisson.png"
       },
     ],
     recette: [
@@ -653,7 +654,7 @@ export const recettes = [
     nutrition_par_portion: {
       calories_kcal: 270,
     },
-    image: "http://localhost:3310/assets/entrees/pannacottatomate.png",
+    image: "http://localhost:3310/assets/entrees/pannacottatomates.png",
     prix: "€€",
     categorie: "Entrée",
     idcategorie: 1,
@@ -1202,7 +1203,7 @@ export const recettes = [
       calories_kcal: 480,
     },
 
-    image: "http://localhost:3310/assets/plats/couscous-vege.png",
+    image: "http://localhost:3310/assets/plats/coucous-vege.png",
     prix: "€",
     categorie: "Plat",
     idcategorie: 2,

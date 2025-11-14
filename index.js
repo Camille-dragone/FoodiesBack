@@ -80,48 +80,6 @@ app.post("/recherche", (req, res) => {
   return res.json(nomsRecettes);
 });
 
-/*
-
-app.post("/recherche", (req, res) => {
-  const {ingredients} = req.body ;
-  console.log(ingredients)
-
-  if (!ingredients || ingredients.length === 0) {
-    return res.status(404).json ("Aucune recettes trouvées")
-  }
-  function isIngredientInUniqueIngredients(uniqueIngredients, ingredient) {
-    return uniqueIngredients.some(
-      (uniqueIngredient) =>
-        uniqueIngredient.nom.toLowerCase() === ingredient.nom.toLowerCase()
-    );
-  }
-
-  const resultats = recettes.filter((rec) => {
-    let nbCommun = 0;
-    rec.ingredients.forEach(ingredientOfRecette => {
-      const isIngredientInParam= isIngredientInUniqueIngredients(ingredients, ingredientOfRecette)
-      if (isIngredientInParam)
-        nbCommun++;
-    }); return nbCommun >= 2;
-  });
-  const nomsRecettes = resultats.map ((rec) => rec.nom);
-
-  res.json(nomsRecettes) ;
-});
-
-    /* 
-    if (nbCommun >= 2)
-      return true
-    else 
-      return false
-      });
-  res.json(resultats); */
-/*
-et là faire l'algo pour la correspondance ? faire un filter ? 
-  faire en sorte de tout convertir en toLowerCase afin que le recherche ne soit pas sensible à la casse ? 
-  lui envoyer le lien 
-
-*/
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
