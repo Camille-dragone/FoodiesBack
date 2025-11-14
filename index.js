@@ -15,41 +15,54 @@ app.use(express.json());
 
 app.use("/assets", express.static(path.join(__dirname, "/assets")));
 
-app.get ("/recettes",(req,res) => { 
-  return res.json(recettes)
-})
-
-app.get("/recettes/:idcategorie", (req, res) => {
-  const id = parseInt(req.params.idcategorie);
-  return res.json(recettes.filter(rec => rec.idcategorie === id));
+// Route pour récupérer toutes les recettes
+app.get("/recettes", (req, res) => {
+  return res.json(recettes);
 });
 
-app.get ("/ingredients",(req,res) => { 
-  const allIngredients = [];
-  recettes.forEach(recette => {
-    recette.ingredients.forEach(ingredient => {
-      allIngredients.push(ingredient)
-    }) 
-  }) 
-  const uniqueIngredients = deduplicateIngredient(allIngredients)
-  return res.json(uniqueIngredients)
-})
+// Route pour récupérer UNE recette par son ID unique
+app.get("/recette/:id", (req, res) => {
+  const id = parseInt(req.params.id);
+  const recette = recettes.find((rec) => rec.id === id);
 
-function deduplicateIngredient (ingredients) {
+  if (!recette) {
+    return res.status(404).json({ message: "Recette non trouvée" });
+  }
+
+  return res.json(recette);
+});
+
+// Route pour filtrer les recettes par catégorie
+app.get("/recettes/categorie/:idcategorie", (req, res) => {
+  const id = parseInt(req.params.idcategorie);
+  return res.json(recettes.filter((rec) => rec.idcategorie === id));
+});
+
+app.get("/ingredients", (req, res) => {
+  const allIngredients = [];
+  recettes.forEach((recette) => {
+    recette.ingredients.forEach((ingredient) => {
+      allIngredients.push(ingredient);
+    });
+  });
+  const uniqueIngredients = deduplicateIngredient(allIngredients);
+  return res.json(uniqueIngredients);
+});
+
+function deduplicateIngredient(ingredients) {
   const uniqueIngredients = [];
-  ingredients.forEach(ingredient => {
+  ingredients.forEach((ingredient) => {
     if (!isIngredientInUniqueIngredients(uniqueIngredients, ingredient))
-      uniqueIngredients.push(ingredient)
+      uniqueIngredients.push(ingredient);
   });
   return uniqueIngredients;
 }
 
-function isIngredientInUniqueIngredients (uniqueIngredients, ingredient) {
-  for (const uniqueIngredient of uniqueIngredients ){
-    if (uniqueIngredient.nom === ingredient.nom)
-      return true 
+function isIngredientInUniqueIngredients(uniqueIngredients, ingredient) {
+  for (const uniqueIngredient of uniqueIngredients) {
+    if (uniqueIngredient.nom === ingredient.nom) return true;
   }
-  return false 
+  return false;
 }
 
 app.post("/recherche", (req, res) => {
@@ -70,7 +83,7 @@ app.post("/recherche", (req, res) => {
     });
 
     const pourcentage = (nbCommun / ingredients.length) * 100;
-    return pourcentage >= 50; 
+    return pourcentage >= 50;
   });
   const nomsRecettes = resultats.map((rec) => rec.nom);
 
@@ -79,7 +92,6 @@ app.post("/recherche", (req, res) => {
   }
   return res.json(nomsRecettes);
 });
-
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
